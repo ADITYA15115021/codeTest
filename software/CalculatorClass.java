@@ -1,12 +1,19 @@
-import java.util.*;
+package software;
 
-public class cal{
+import java.util.Scanner;
 
+public class CalculatorClass{
+   
     static Scanner sc = new Scanner(System.in);
+
     public static void main(String[] args) {
         boolean flag = true;
         while(flag){
-            System.out.println("1.ADDITION\n2.SUBTRACTION\n3.DIVISION\n4.MULTIPLICATION\n5.EXIT");
+            System.out.println("1.ADDITION");
+            System.out.println("2.SUBTRACTION");
+            System.out.println("3.DIVISION");
+            System.out.println("4.MULTIPLICATION");
+            System.out.println("5.EXIT");
             System.out.print("SELECT AN OPTION: ");
             int x = sc.nextInt();
             switch (x) {
@@ -66,4 +73,6 @@ public class cal{
         int num2 = sc.nextInt();
         System.out.println(num1*num2);
     }
+
 }
+
